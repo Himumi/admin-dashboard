@@ -18,6 +18,46 @@ img[src$='.svg'] {
 
 header {
   background-color: #FFFFFF;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.notify-section > img[src$='.png'] {
+  width: 45px;
+
+  border-radius: 50%;
+}
+
+header > div{
+  display: grid;
+  grid-template-columns: 2fr 1.1fr;
+
+  padding-left: 50px;
+}
+
+header .search-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-self: center;
+  gap: 18px;
+}
+
+.search-section input {
+  border-radius: 15px;
+  padding: 8px 10px;
+
+  background-color: #E1E7F0;
+  border: none;
+}
+
+header .notify-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 nav {
