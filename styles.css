@@ -190,7 +190,7 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 35px;
+  gap: 35px 25px;
 }
 
 main > div {
