@@ -45,8 +45,8 @@ header > div {
   grid-template-columns: 2fr 1fr;
   justify-items: start;
 
-  padding-left: 50px;
-  padding-right: 75px;
+  padding-left: 35px;
+  padding-right: 70px;
 }
 
 header > div:first-child {
