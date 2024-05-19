@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.bottom-shadow {
+  -webkit-box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.5);
+}
+
+.rounded-corner {
+  border-radius: 15px;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -163,4 +172,110 @@ nav .logo > h1 {
 
 main {
   background-color: #E1E7F0;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px 35px;
+}
+
+main > div {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+}
+
+main > div > h2 {
+  margin-bottom: 10px;
+}
+
+main .projects {
+  grid-row: 1 / 3;
+}
+
+.projects > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+
+  gap: 20px;
+}
+
+.projects .project-content {
+  height: 100%;
+  padding: 35px 25px;
+
+  border-left: solid 15px #EFB32B;
+  
+  background-color: #fff;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.projects .project-content h4 {
+  margin-bottom: 8px;
+}
+
+.projects .project-buttons {
+  justify-self: end;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+
+.announcements > div {
+  background-color: #fff;
+  border-radius: 10px;
+
+  padding: 20px 30px;
+
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.announcements .announcement-content {
+  border-bottom: solid 1px lightgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.announcement-content > h3 {
+  margin-bottom: 0.3em;
+}
+.announcements .announcement-content:last-child {
+  border: none;
+}
+
+.trendings > div {
+  background-color: #fff;
+
+  padding: 40px 40px;
+
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 25px;
+}
+
+.trendings img[src$='.jpeg'] {
+  width: 65px;
+  border-radius: 50%;
+}
+
+.trendings .trending-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 5px 10px;
+}
+
+.trending-content > img {
+  grid-row: 1 /3;
+
+  align-self: center;
+}
+.trending-content > h3 {
+  align-self: end;
 }
