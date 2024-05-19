@@ -265,7 +265,7 @@ main .projects {
 .trendings > div {
   background-color: #fff;
 
-  padding: 70px;
+  padding: 40px;
 
   display: grid;
   grid-auto-rows: 1fr;
